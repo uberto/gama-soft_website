@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <link href="css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+	.bg-banner{
+		background-image: url("img/main_slide.jpg");
+		background-size: cover;
+		height: auto;
+	}
+
+	.col-md-6{
+		width: 45%;
+	}
+
+	.col-md-5{
+		width: 55%;
+	}
+
+	.container{
+		width: 100%;
+	}
+
+	.m-l{
+		padding: 120px 0px;
+	}
+
+	.mq{
+			display: none;
+		}
+
+	@media (max-width: 999px) {
+		
+		.col-md-6{
+		 	width: 100%;
+		}
+
+		.col-md-5{
+			width: 0;
+		}
+
+		.m-l{
+			margin-left: 50%;
+		}
+
+	}
+	@media (max-width: 760px){
+
+		.container{
+			display: none;
+		}
+		
+		
+	}
+	@media (min-width: 761px) {
+
+		.mq{
+			display: none;
+		}
+		
+	}
+</style>
+</head>
+
+
+<body>
+<section class="bg-banner container">
+<div class="col-md-5">
+</div>
+<div class="col-md-6">
+		<div class="m-l">
+            <h1><span style=" font-weight: bold; color:#000000; margin-top: 3px;">Uberto Barbini</span></h1>
+            <div>
+              	Expert Testing, Clean design, Distributed architecture<br>
+				Polyglot Programmer (Java, C#, Python, Haskell, others)<br>
+				Passionate about Functional (and real OO) programming<br>
+				pen source contributor and supporter<br>
+				Technical author and speaker<br>
+        	</div>
+        	<img src="img/expertise_logos.png" width="190px">
+</div>
+</div>
+</section>
+
+<section class="mq">
+<div>
+	<img src="img/main_slide.jpg" width="100%">
+<div>
+<div>
+<h1><span style=" font-weight: bold; color:#000000; margin-top: 3px;">Uberto Barbini</span></h1>
+            <div>
+              	Expert Testing, Clean design, Distributed architecture<br>
+				Polyglot Programmer (Java, C#, Python, Haskell, others)<br>
+				Passionate about Functional (and real OO) programming<br>
+				pen source contributor and supporter<br>
+				Technical author and speaker<br>
+        	</div>
+        	<img src="img/expertise_logos.png" width="190px">
+</div>
+</section>
+</body>
+</html>
