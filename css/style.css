@@ -46,9 +46,67 @@ textarea,input[type="text"]{
 }
 
 
+
+
 /* ------Background-colors-----*/
 .bg-gray{
 	background-color: #f2f5f7;
+}
+.gamasoft{
+	color: #00A550;
+}
+.contactMeNow{
+background-color: #00a651;
+    width: 266px !important;
+    height: 72px;
+    padding: 24px;
+    font-size: 23px;
+    color: #fff;
+    border-radius: 43px;
+	margin: auto;
+	text-decoration: none;
+	font-weight: 700;
+}
+.contactMeNow a{
+	color: #fff;
+	
+}
+.contactMeNow a:hover{
+	color: #f2f2f2;
+	
+}
+.card-container {
+  cursor: pointer;
+  height: 150px;
+  perspective: 400;
+  position: relative;
+  width: 150px;
+  margin: 0px auto;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  background: #00A550;
+  color: #fff;
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
 }
 .bg-img1{
 	background-image: url(../img/green_slot_bg.jpg);
@@ -367,7 +425,7 @@ span.icon-bar{
 	overflow: hidden !important;
 	width: 100%;
 	height: 100%;
-	background-image: url(img/main_slide_gw.jpg);
+	background-image: url(img/main_slide.jpg);
 	background-size: cover;
 }
 
@@ -1906,6 +1964,10 @@ span.icon-bar{
 	}
 }
 @media(min-width:1220px) and (max-width: 1366px) {
+   .m-l{
+   		padding: 120px !important;
+   }
+
    .flexslider {
    		top:45%;
    	}
@@ -1929,9 +1991,17 @@ span.icon-bar{
    	.nav{
    		padding-left: 100px;
    	}
+
+   	.m-l{
+   		padding: 50px !important;
+   	}
    }
    @media(min-width:768px) and (max-width: 991px) {
    	
+   	.m-l{
+		padding: 50px !important;
+   	}
+
    	.nav{
    		padding-left: 0px;
    	}
@@ -2051,12 +2121,10 @@ span.icon-bar{
 }
 
 .m-l{
-	padding: 50px 0px;
+	padding: 185px 0px;
+	margin-left: 50%;
 }
 
-.m-l{
-		margin-left: 50%;
-}
 
 @media (max-width: 760px){
 
@@ -2073,4 +2141,17 @@ span.icon-bar{
 		display: none;
 	}
 		
+}
+
+img-hover {
+	width: 113px;
+	height: 125px;
+	margin:0px auto;
+}
+
+img-hover:hover{
+	width: 125px;
+	height: 135px;
+	cursor: pointer;
+
 }

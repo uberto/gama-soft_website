@@ -4,15 +4,13 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html class="not-ie" lang="en"> <!--<![endif]-->
 <head>
-	<!-- Basic Meta Tags -->
+  <!-- Basic Meta Tags -->
   <meta charset="utf-8">
-
   <!-- Title -->
-  <title>Contact - Uberto Barbini</title>
+  <title>Uberto Barbini - </title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!--[if (gte IE 9)|!(IE)]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -30,13 +28,21 @@
     <!-- Animation -->
     <link href="css/animate.css" rel="stylesheet">
 
+    <!-- Owl Carousel -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+
+    <!-- Flexslider -->
+    <link href="css/flexslider.css" rel="stylesheet"> 
+
     <!-- Styles -->
     <link href="css/style.css" rel="stylesheet">
+
 
     <!-- Web Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,800,700' rel='stylesheet' type='text/css'>
 
+    <script src="js/modernizr.custom.97074.js"></script>
   </head>
 
 
@@ -45,7 +51,7 @@
 
   <body>
 
-    <!-- Header -->
+   <!-- Header -->
    <header> 
 
 	<!--<div class="row">
@@ -101,22 +107,49 @@
 
 
 
-
-
-
+   
 <!-- HEADER-TITLE
     ================================================== -->
     <div class="row">
       <div class="header-wrapper text-ca text-2">
-        <h3>GET IN TOUCH</h3>
+        <h3>EVENTS</h3>
         <ol class="breadcrumb">
           <li class="active">HOME</li>
-          <li class="active">CONTACT ME</li>
+          <li class="active">EVENTS</li>
         </ol>
       </div>
     </div>
 
-    <!-- end of header-title -->   
+    <!-- end of header-title -->
+  <!-- Services
+  ================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <h2 class="h2 text-bold-7 padding-b-20" style="text-align: center;">Events</h2>
+		<p style="font-size: 30px; color: #333;text-align: left;"></p>
+		
+		<!--<img src="img/more.png" style="margin:0px auto;">-->
+      </div>
+      <div class="row">
+
+        
+
+        
+
+        
+        
+        </div>
+
+        
+
+     </div>
+   </div>
+  </section>
+
+  <!-- End Services-->
+
+ 
 
 
 
@@ -124,107 +157,12 @@
 
 
 
-    <!-- Contact-Details
-    ================================================== -->
-<?php
-//if "email" variable is filled out, send email
-  if (isset($_REQUEST['email']))  {
-  
-  //Email information
-  $admin_email = "uberto@gama-soft.com";
-  $email = $_REQUEST['name'];
-  $subject = $_REQUEST['email'];
-  $comment = $_REQUEST['message'];
-  
-  //send email
-  mail($admin_email, "$subject", $comment, "From:" . $email);
-  
-  //Email response
-  echo "Thank you for contacting us!";
-  }
-  
-  //if "email" variable is not filled out, display the form
-  else  {
-?>
-    <section class="contact_page padding_100 text-left">
-      <div class="container">
-        <div class="col-md-8 col-sm-8">
-          <form method="post">
-
-            <div class="row">
-              <div class="col-md-6 col-sm-6">
-                  <div class="form-group form-custom">
-                    <label class="h5 text-bold-7">Name</label>
-                    <input type="text" class="form-control" name="name"  placeholder="Enter name" title="Please enter your name (at least 2 characters)">
-                  </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                  <div class="form-group form-custom">
-                    <label class="h5 text-bold-7">Email</label>
-                    <input type="email" class="form-control" name="email" placeholder="Enter email" title="Please enter a valid email address">
-                  </div>
-                </div>
-            </div> 
-
-            <!-- End of row -->
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="form-group form-custom">
-                <label class="h5 text-bold-7">Message</label>
-                <textarea name="message" class="form-control" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
-              </div>
-              </div>
-            </div> 
-
-            <!-- End of row -->
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <button type="submit" class="btn btn-info">Send Message</button>
-                </div>
-              </div>
-            </div> <!-- End of row -->
-			
-
-
-          </form> <!-- End of Form -->
-		  
-		  <?php
-  }
-?>
-        </div> <!-- End of Col-8 -->
-
-        <!-- Address -->
-        <div class="col-md-3 col-sm-3 col-md-offset-1 col-sm-offset-1">
-          <h4 class="h4 text-ca text-bold-7 padding-t-b-10">Head Office : </h4>
-          <address>
-		  
-
-
-            <p><i class="fa fa-map-marker text-16 txt-custom "></i> Gama-Soft limited</p>
-            <p>Front Suite, First Floor, 131 High Street</p>
-            <p> Teddington, Middlesex, TW11 8HH</p>
-            <p><i class="fa fa-envelope-o text-16 txt-custom"></i> &nbsp; uberto@gama-soft.com</p>
-            <p><i class="fa fa-globe text-16 txt-custom"></i> &nbsp; <a href="#">www.gama-soft.com</a></p>
-          </address>
-        </div> <!-- End of Col-3 -->
-
-      </div> <!-- End Of container -->
-    </section>
-    
-    <!-- End of Contact -->
 
 
 
 
-    <!-- Offices List
-    ================================================== -->
 
-
-  
-     <!-- FOOTER-Top
+  <!-- FOOTER-Top
     ================================================== -->
     <section class="footer2 bg-dark">
       <div class="container">
@@ -255,12 +193,25 @@
 
 
 
+
+
+
+
+
+
    <!-- JavaScripts -->
    <script type="text/javascript" src="js/jquery-1.10.2.js"></script> 
    <!-- Bootstrap -->                                                      
    <script type="text/javascript" src="js/bootstrap.min.js"></script>
    <!-- Scroll -->
    <script src="js/scroll.js"></script>
+   <!-- Hover-effect --> 
+   <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+   <script type="text/javascript">
+   $(function() { $(' .portfolio-wrapper > .effect ').each( function() { $(this).hoverdir(); } );});
+   </script>
+   <!-- Bxslider -->  
+   <script src="js/owl.carousel.js"></script>
    <!-- Sticky --> 
    <script type="text/javascript" src="js/jquery.sticky.js"></script> 
    <!-- Tinynav --> 
@@ -268,8 +219,10 @@
    <!-- wow/animation -->  
    <script src="js/wow.min.js"></script>
    <script>new WOW().init();</script>  
+   <!-- Tinynav --> 
+   <script type="text/javascript" src="js/jquery.flexslider.js"></script>
    <!-- Custom --> 
    <script type="text/javascript" src="js/main01.js"></script> 
-
+   
   </body>
 </html>
