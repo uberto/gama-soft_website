@@ -54,7 +54,7 @@ textarea,input[type="text"]{
 	color: #00A550;
 }
 .contactMeNow{
-background-color: #00a651;
+    background-color: #00a651;
     width: 266px !important;
     height: 72px;
     padding: 24px;
@@ -69,10 +69,12 @@ background-color: #00a651;
 	color: #fff;
 	
 }
+
 .contactMeNow a:hover{
-	color: #f2f2f2;
-	
+	color: #606060;
+	transition: 1s ease-in-out;
 }
+
 .card-container {
   cursor: pointer;
   height: 150px;
